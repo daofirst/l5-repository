@@ -43,7 +43,6 @@ class RequestCriteria implements CriteriaInterface
         $sortedBy = $this->request->get(config('repository.criteria.params.sortedBy', 'sortedBy'), 'asc');
         $with = $this->request->get(config('repository.criteria.params.with', 'with'), null);
         $sortedBy = !empty($sortedBy) ? $sortedBy : 'asc';
-
         if ($search && is_array($fieldsSearchable) && count($fieldsSearchable)) {
 
             $searchFields = is_array($searchFields) || is_null($searchFields) ? $searchFields : explode(';', $searchFields);

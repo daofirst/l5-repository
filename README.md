@@ -148,8 +148,7 @@ php artisan vendor:publish
 
 通常创建模型，都会设置可批量赋值的字段。
 
-```php
-namespace App;
+```php namespace App;
 
 class Post extends Eloquent { // or Ardent, Or any other Model Class
 

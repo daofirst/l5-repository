@@ -190,6 +190,7 @@ interface RepositoryInterface
     public function visible(array $fields);
 
     /**
+     * 使用自定义范围查询
      * Query Scope
      *
      * @param \Closure $scope
@@ -199,6 +200,7 @@ interface RepositoryInterface
     public function scopeQuery(\Closure $scope);
 
     /**
+     * 重置自定义范围查询
      * Reset Query Scope
      *
      * @return $this
@@ -214,6 +216,7 @@ interface RepositoryInterface
     public function getFieldsSearchable();
 
     /**
+     * 设置呈现器
      * Set Presenter
      *
      * @param $presenter
@@ -223,6 +226,7 @@ interface RepositoryInterface
     public function setPresenter($presenter);
 
     /**
+     * 忽略呈现器
      * Skip Presenter Wrapper
      *
      * @param bool $status
